@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Master Password Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Master Password Generator</h1>
+
+        <div class="password-box">
+            <p class="label">Generated Master Password:</p>
+            {% if password %}
+                <div class="password">{{ password }}</div>
+            {% else %}
+                <div class="password warning">No USB device detected</div>
+            {% endif %}
+        </div>
+
+        <div class="note">
+            <p>The password is temporary and will be deleted after use.</p>
+        </div>
+
+        <a href="/history" class="btn">View History</a>
+    </div>
+</body>
+</html>

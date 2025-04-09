@@ -1,0 +1,80 @@
+/* style.css */
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.password-box {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.password {
+    font-weight: bold;
+    font-size: 22px;
+    color: #6fffb0;
+    word-break: break-all;
+}
+
+.password.warning {
+    color: #ff8080;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3c90ef;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #2565ae;
+}
+
+.note {
+    font-size: 14px;
+    color: #aaaaaa;
+    text-align: center;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 10px;
+    border: 1px solid #444;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+}
