@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome - Password Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Password Generator</h1>
+        <p>Please enter your login and password to continue or insert a USB device if you don't remember your password</p>
+        
+        <!-- Логин -->
+        <label for="username">Enter your login:</label>
+        <input type="text" id="username" class="input-box" placeholder="Your login" required>
+        
+        <!-- Пароль -->
+        <label for="password">Enter your password:</label>
+        <input type="password" id="password" class="input-box" placeholder="Your password" required>
+        
+        <!-- Кнопка авторизации -->
+        <button id="loginBtn">Login</button>
+        
+        <!-- Сообщения об ошибке -->
+        <div id="errorMessage" style="color: red; display: none;">Incorrect login or password, or no USB detected!</div>
+
+        <!-- Кнопка для использования флешки -->
+        <button id="useUsbBtn">Use USB for login</button>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password History</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password History</h1>
+
+        <!-- История паролей -->
+        <ul>
+            {% for entry in history %}
+                <li>
+                    <strong>Password:</strong> {{ entry.password }} <br>
+                    <strong>Created at:</strong> {{ entry.created_at }}
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="javascript:void(0);" id="backToGenerateBtn" class="link"/a>
+
+        <!-- Кнопка для возврата на главную -->
+        <a href="/" class="link">Back to Generate Password</a>
+    </div>
+</body>
+</html>
